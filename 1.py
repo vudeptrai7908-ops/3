@@ -48,7 +48,7 @@ response = requests.post('https://modal.com/api/playground/tuannew00018/run', co
 #response = requests.post('https://modal.com/api/playground/tuannew00018/run', cookies=cookies, headers=headers, data=data)
 
 url = 'https://modal.com/api/playground/tuannew00018/run'
-delay = 30  
+delay = 10
 
 def main():
     while True:
@@ -73,3 +73,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
