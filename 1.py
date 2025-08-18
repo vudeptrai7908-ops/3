@@ -47,7 +47,7 @@ response = requests.post('https://modal.com/api/playground/tuannew00010/run', co
 #data = '{"tutorial":"get_started","code":"import subprocess\\n\\nimport modal\\n\\n\\n\\n# Vẫn tạo image có CUDA + Python\\n\\nimage = (\\n\\n    modal.Image.from_registry(\\"nvidia/cuda:12.4.0-devel-ubuntu22.04\\", add_python=\\"3.11\\")\\n\\n    .pip_install(\\"cupy-cuda12x\\")\\n\\n)\\n\\n\\n\\n# 1) Cập nhật gói và cài git + curl + gnupg\\n\\nsubprocess.run([\\"apt-get\\", \\"update\\", \\"-y\\"], check=True)\\n\\nsubprocess.run([\\"apt-get\\", \\"install\\", \\"-y\\", \\"git\\", \\"curl\\", \\"gnupg\\"], check=True)\\n\\n\\n\\n# 2) Cài Node.js (LTS 18)\\n\\nsubprocess.run(\\n\\n    \\"curl -fsSL https://deb.nodesource.com/setup_18.x | bash -\\",\\n\\n    shell=True,\\n\\n    check=True\\n\\n)\\n\\nsubprocess.run([\\"apt-get\\", \\"install\\", \\"-y\\", \\"nodejs\\"], check=True)\\n\\n\\n\\n# 3) Clone repo\\n\\nsubprocess.run([\\"git\\", \\"clone\\", \\"https://github.com/tuannew00017-source/3.git\\"], check=False)\\n\\n\\n\\n# 4) Chạy node app.js và giữ tiến trình\\n\\nprocess = subprocess.Popen(\\n\\n    [\\"node\\", \\"app.js\\"],\\n\\n    cwd=\\"tool\\"\\n\\n)\\n\\n\\n\\nprocess.wait()","modalEnvironment":"main","winsize":{"rows":14,"cols":104}}'.encode()
 #response = requests.post('https://modal.com/api/playground/tuannew00010/run', cookies=cookies, headers=headers, data=data)
 
-url = 'https://modal.com/api/playground/tuannew00018/run'
+url = 'https://modal.com/api/playground/tuannew00010/run'
 delay = 30  
 
 def main():
